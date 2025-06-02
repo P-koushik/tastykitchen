@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 130px ;
+  background-color: #f8fafc; /* light gray background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Title (Logo Text) */
+.header-title {
+  font-size: 20px;
+  color: #f7931e;
+  font-style: italic;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Nav Section */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Nav List */
+.header-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+/* Nav Links */
+.header-nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e293b;
+  transition: color 0.3s ease;
+}
+
+.header-nav ul li a:hover {
+  color: #f7931e;
+}
+
+/* Login/Logout Button */
+.header-button {
+  background-color: #f7931e;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+  background-color: #e67e0f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
