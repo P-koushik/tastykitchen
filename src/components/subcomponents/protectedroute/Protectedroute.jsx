@@ -1,6 +1,5 @@
 import { Navigate } from "react-router-dom";
 import Cookies from "js-cookie";
-import { Navbar } from "./navbar";
 
 const ProtectedRoute = ({ children }) => {
   const token = Cookies.get("token");
@@ -9,7 +8,6 @@ const ProtectedRoute = ({ children }) => {
   }
   return (
     <>
-      <Navbar />
       {children}
     </>
   );
