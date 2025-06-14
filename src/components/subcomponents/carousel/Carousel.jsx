@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './carousel.css';
+import './Carousel.css';
 import Cookies from 'js-cookie';
 
 const Carousel = () => {
