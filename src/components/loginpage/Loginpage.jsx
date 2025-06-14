@@ -1,5 +1,5 @@
 import React from 'react'
-import './loginpage.css'
+import './Loginpage.css'
 import Cookies from "js-cookie";
 import {useState,useEffect} from 'react'
 import { useNavigate } from 'react-router-dom'
